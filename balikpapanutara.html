@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Coffepedia</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+</head>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="css/vendor.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chilanka&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasSearch" aria-labelledby="Search">
+        <div class="offcanvas-header justify-content-center">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+            <div class="order-md-last">
+                <h4 class="text-primary text-uppercase mb-3">
+                    Search
+                </h4>
+                <div class="search-bar border rounded-2 border-dark-subtle">
+                    <form id="search-form" class="text-center d-flex align-items-center" action="" method="">
+                        <input type="text" class="form-control border-0 bg-transparent" placeholder="Search Here" />
+                        <iconify-icon icon="tabler:search" class="fs-4 me-3"></iconify-icon>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container py-2">
+            <div class="row py-4 pb-0 pb-sm-4 align-items-center ">
+
+                <div class="col-sm-4 col-lg-6 text-center text-sm-start">
+                    <div class="main-logo">
+                        <a href="index.html">
+                            <img width="50%" src="images/inilogo.png" alt="logo" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 offset-sm-2 offset-md-0 col-lg-6 d-none d-lg-block">
+                    <div class="search-bar border rounded-2 px-3 border-dark-subtle">
+                        <form id="search-form" class="text-center d-flex align-items-center" action="" method="">
+                            <input type="text" class="form-control border-0 bg-transparent" placeholder="Cari tempat nongkrongmu" />
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" />
+              </svg>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <hr class="m-0">
+        </div>
+
+        <div class="container">
+            <nav class="main-menu d-flex navbar navbar-expand-lg ">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+                    <div class="offcanvas-header justify-content-center">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body justify-content-between">
+
+                        <ul class="navbar-nav menu-list list-unstyled d-flex gap-md-3 mb-0">
+                            <li class="nav-item">
+                                <a href="balikpapanutara.html" class="nav-link fw-bold">Balikpapan Utara</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="balikpapantimur.html" class="nav-link fw-bold">Balikpapan Timur</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="balikpapanselatan.html" class="nav-link fw-bold">Balikpapan Selatan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="balikpapanbarat.html" class="nav-link fw-bold">Balikpapan Barat</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="balikpapantengah.html" class="nav-link fw-bold">Balikpapan Tengah</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="balikpapankota.html" class="nav-link fw-bold">Balikpapan Kota</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="clothing" class="my-5 overflow-hidden">
+        <div class="container-xxl pb-5">
+
+            <div class="section-header d-md-flex justify-content-center align-items-center mb-3">
+                <h2 class="display-5 fw-normal">Coffeeshop Di Balikpapan Utara</h2>
+            </div>
+            <div class="container-xxl">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="28kopi.html">
+                            <div class="card">
+                                <img style="height: 300px;object-fit: cover;border-radius: 5%;" src="images/28kopi/bg1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title"><b>28 Coffee</b></h5>
+                                    <p class="card-text">Jalan Soekarno Hatta km 2.5 No.70, Batu Ampar,</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="sonscoffee.html">
+                            <div class="card">
+                                <img style="height: 300px;object-fit: cover;border-radius: 5%;" src="images/sons/bg1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title"><b>SON's Coffee</b></h5>
+                                    <p class="card-text">Jl. Kutai Hill, Gn. Samarinda,</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="sangukopi.html">
+                            <div class="card">
+                                <img style="height: 300px;object-fit: cover;border-radius: 5%;" src="images/sangu/bg1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title"><b>Sangu Kopi</b></h5>
+                                    <p class="card-text">Jl. Soekarno Hatta No.6, Batu Ampar,</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="zcoffee.html">
+                            <div class="card">
+                                <img style="height: 300px;object-fit: cover;border-radius: 5%;" src="images/zkopi/bg1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title"><b>Z - Coffee</b></h5>
+                                    <p class="card-text">Jl. Pattimura, Batu Ampar</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-bottom">
+        <div class="container">
+            <hr class="m-0">
+            <div class="row mt-3">
+                <div class="col-md-12 copyright">
+                    <center>
+                        <p class="secondary-font">© 2024 Coffeepedia. All rights reserved.</p>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+
+</html>
